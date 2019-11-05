@@ -2,6 +2,7 @@ var data;
 var profile = [];
 var randomText = [];
 
+
 function preload(){
   var file = 'js/profile.json';
   data = loadJSON(file);
@@ -16,9 +17,9 @@ function setup(){
   angleMode(DEGREES);
 
   var names = data.name;
-  append (profile, names.givenName);
-  append (profile, names.familyName);
-  append (profile, names.formattedName);
+  append(profile, names.givenName);
+  append(profile, names.familyName);
+  append(profile, names.formattedName);
   console.log(profile);
 
   // for (var i = 0; i < profile.length; i++){
@@ -54,7 +55,7 @@ function setup(){
     //createP(profile[i]); 
      
     for(var j=0; j < list.length; j++){
-      append (randomText, list[j]);
+      append(randomText, list[j]);
       console.log(randomText);
     }
     
